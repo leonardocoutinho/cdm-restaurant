@@ -1,0 +1,25 @@
+<ion-header no-border>
+  <ion-navbar color="cdm_primary" transparent>
+    <button ion-button menuToggle>
+      <ion-icon name="list" color="cdm_secondary"></ion-icon>
+    </button>
+  </ion-navbar>
+</ion-header>
+
+<ion-content fullscreen>
+    <ion-slides pager (ionSlideAutoplay)="true" >
+      <ion-slide *ngFor="let dish of dishDayRef$ | async" class="card-background-page">
+        <img src="https://picsum.photos/200/300/?random"/>
+        <div class="card-title">{{dish.title}}</div>
+      </ion-slide>
+    </ion-slides>
+
+    <div class="container">
+      <div class="item" *ngFor="let data of allData" >
+        <img src="https://picsum.photos/200/300/?random"/>
+        <small class="itm">Food's</small>
+      </div>
+    </div>
+
+  <button ion-button color="primary" navPush="Menu" >Menu</button>
+</ion-content>

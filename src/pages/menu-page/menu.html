@@ -1,0 +1,43 @@
+<ion-header no-border>
+  <ion-navbar color="fancy">
+    <button ion-button menuToggle>
+      <ion-icon name="list"></ion-icon>
+    </button>
+    <ion-title text-center>
+      Menu
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content fullscreen class="card-background-page">
+
+
+  <ion-card (click)="selectPage('Breakfast')">
+    <img src="https://placehold.it/300x200"/>
+    <div class="card-subtitle">Breakfast</div>
+    
+  </ion-card>
+
+  <ion-card (click)="selectPage('Lunch')">
+    <img src="https://placehold.it/300x200"/>
+    <div class="card-subtitle">Lunch</div>
+  </ion-card>
+
+  <ion-card (click)="selectPage('FastFood')">
+    <img src="https://placehold.it/300x200"/>
+    <div class="card-subtitle">FastFood</div>
+  </ion-card>
+
+  <ion-card (click)="selectPage('DrinksTab')">
+    <img src="https://placehold.it/300x200"/>
+    <div class="card-subtitle">Drinks</div>
+  </ion-card>
+
+  <ion-card (click)="selectPage('DrinksTab')">
+      <img src="https://placehold.it/300x200"/>
+      <div class="card-subtitle">Desserts</div>
+    </ion-card>
+
+</ion-content>
+

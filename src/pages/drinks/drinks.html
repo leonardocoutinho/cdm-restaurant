@@ -1,0 +1,18 @@
+<ion-header>
+    <ion-navbar color="primary">
+      <button ion-button icon-only (click)="back()"><ion-icon name="arrow-back"></ion-icon></button>
+      <ion-title>{{currentPage}}</ion-title>
+      <ion-buttons end >
+        <button ion-button icon-only navPush="Search" [navParams]="{page: currentPage}" >
+          <ion-icon name="search"></ion-icon>
+        </button>
+        <button ion-button icon-only (click)="filterFood($event)">
+          <ion-icon name="funnel"></ion-icon>
+        </button>
+      </ion-buttons>
+    </ion-navbar >
+  </ion-header>
+  
+  <ion-content>
+    <menu-list-component></menu-list-component>
+  </ion-content>

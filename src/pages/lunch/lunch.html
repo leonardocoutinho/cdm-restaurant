@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>{{currentPage}}</ion-title>
+    <ion-buttons end >
+      <button ion-button icon-only navPush="Search" [navParams]="{page: currentPage}" >
+        <ion-icon name="search"></ion-icon>
+      </button>
+      <button ion-button icon-only (click)="filterFood($event)">
+        <ion-icon name="funnel"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar >
+  <ion-toolbar>
+        <ion-segment [(ngModel)]="food">
+            <ion-segment-button value="Lunch">
+              Almoço
+            </ion-segment-button>
+            <ion-segment-button value="Appetizer">
+              Entradas
+            </ion-segment-button>
+        </ion-segment>
+      </ion-toolbar>
+</ion-header>
+    
+  
+    <ion-content>
+        <div [ngSwitch]="food">
+            <ion-list *ngSwitchCase="'Lunch'">
+              <lunch-component [currentPage]="food" ></lunch-component>
+            </ion-list>
+          
+            <ion-list *ngSwitchCase="'Appetizer'">
+              <appetizer-component [currentPage]="food" ></appetizer-component>
+            </ion-list>
+          </div>
+    </ion-content>
+  
+    

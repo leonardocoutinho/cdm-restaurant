@@ -1,0 +1,58 @@
+//     .intropage{
+//         background: url('../../assets/img/intro_restaurant1.jpg');
+//     background-repeat: no-repeat;
+//     background-size: 100% 100%;
+//         filter: brightness(10%);
+//     }
+
+//     .restaurant {
+//     //        background: #4CB8C4;  /* fallback for old browsers */
+//     // background: -webkit-linear-gradient(to top, #3CD3AD, #4CB8C4);  /* Chrome 10-25, Safari 5.1-6 */
+//     // background: linear-gradient(to top, #3CD3AD, #4CB8C4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+//         h1, p {
+//             color: white;
+//         }
+        
+//     }
+
+//     .coffee {
+// // background: #0B486B;  /* fallback for old browsers */
+// // background: -webkit-linear-gradient(to bottom, #F56217, #0B486B);  /* Chrome 10-25, Safari 5.1-6 */
+// // background: linear-gradient(to bottom, #F56217, #0B486B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+//  background: url('https://unsplash.it/2208/2208');
+//     background-repeat: no-repeat;
+//     background-size: 100% 100%;
+//     h1, p {
+//         color: white;
+//     }
+//     }
+
+.profile-view__image-container {
+      h2 {
+            position: absolute;
+            top: 300px;
+            left: 0px;
+            right: 0px;
+            color: white;
+        }  
+}
+
+.profile-view__image1 {
+    position:relative;
+    // background: url('../../assets/img/intro_restaurant3.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    filter: brightness(50%);
+}
+
+.profile-view__image {
+    position: absolute;
+    top: 180px;
+    left:0px;
+}
+
+
+
+ 
+

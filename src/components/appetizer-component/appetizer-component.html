@@ -1,0 +1,8 @@
+<ion-content class="card-background-page">
+    <h1>Hey</h1>
+    <ion-card *ngFor="let appetizer of menuFoodsRef$ | async" class="container" >
+        <img *ngIf="appetizer.image" [src]="appetizer.image"/>
+        <div class="card-title">{{appetizer.title}}</div>
+        <div class="card-subtitle">{{appetizer.details}}</div>
+</ion-card>
+</ion-content>

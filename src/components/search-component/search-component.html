@@ -1,0 +1,14 @@
+<ion-searchbar (ionInput)="searchFood($event)">    
+</ion-searchbar>
+
+<ion-card *ngFor="let menuFood of menuFoodsRef$ | async" >
+        <ion-item>
+        <h2>{{menuFood.title}}</h2>
+        <p>{{menuFood.details}}</p>
+       </ion-item>
+  
+      <img [src]="menuFood.image" />
+  <ion-card-content>
+    <p>{{menuFood.description}}</p>
+  </ion-card-content>
+  </ion-card>

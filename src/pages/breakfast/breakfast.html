@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>{{currentPage}}</ion-title>
+    <ion-buttons end >
+      <button ion-button icon-only navPush="Search" [navParams]="{page: currentPage}" >
+        <ion-icon name="search"></ion-icon>
+      </button>
+      <button ion-button icon-only (click)="filterFood($event)">
+        <ion-icon name="funnel"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar >
+</ion-header>
+
+<ion-content>
+        
+    <ion-card *ngFor="let menuFood of menuFoodsRef$ | async">
+      
+      <ion-item>
+        <h2>{{menuFood.title}}</h2>
+        <p>{{menuFood.details}}</p>
+      </ion-item>
+      
+      <img *ngIf="menuFood.image" [src]="menuFood.image"/>
+    
+      <ion-card-content>
+        <p>{{menuFood.description}}</p>
+      </ion-card-content>
+  
+      </ion-card> 
+  </ion-content>

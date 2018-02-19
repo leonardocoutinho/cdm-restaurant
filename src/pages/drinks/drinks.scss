@@ -1,0 +1,32 @@
+page-drinks {
+    segment-header {
+        // background-color: #363636;
+		// color: #fff;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+        padding: 0;
+        margin: 0;
+
+		// img {
+		// 	border-radius: 50%;
+		// 	width: 75px;
+		// 	height: auto;
+		// 	margin-right: 15px;
+		// }
+    }
+
+}
+
+.toolbar-ios .segment-button {
+	height: 30px;
+	max-width: 150px;
+	color: #387EF5;
+
+}
+
+.segment-ios .segment-button.segment-activated {
+	color: white;
+	background-color: #387EF5;
+}
+

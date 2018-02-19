@@ -1,0 +1,30 @@
+<!-- <ion-list>
+  <ion-item>
+    <ion-label>Filtro</ion-label>
+    <ion-select 
+            [(ngModel)]="foodFilter" 
+            interface="action-sheet" 
+            (ionChange)="filterFood($event)" 
+            (ionCancel)="resetFoodList()"
+            cancelText="Mostrar Todos">
+      <ion-option value="entrada">Entradas</ion-option>
+      <ion-option value="sopa">Sopas</ion-option>
+      <ion-option value="salada">Saladas</ion-option>
+      <ion-option value="massa">Massas</ion-option>
+      <ion-option value="peixe">Peixe</ion-option>
+      <ion-option value="carne">Carnes</ion-option>
+    </ion-select>
+  </ion-item>
+</ion-list> -->
+
+<ion-card *ngFor="let menuFood of menuFoodsRef$ | async" >
+    <ion-item>
+      <h2>{{menuFood.title}}</h2>
+      <p>{{menuFood.details}}</p>
+     </ion-item>
+
+    <img *ngIf="menuFood.image" [src]="menuFood.image" />
+<ion-card-content>
+  <p>{{menuFood.description}}</p>
+</ion-card-content>
+</ion-card>

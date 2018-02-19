@@ -1,0 +1,13 @@
+<ion-list radio-group no-lines>
+  <ion-item *ngFor="let item of popoverItemList">
+      <ion-label>{{item.type | capitalize}}</ion-label>
+      <ion-radio value="{{item.type}}" (ionSelect)="viewCtrl.dismiss(item.type)"></ion-radio>
+  </ion-item>
+
+  <ion-item color="primary" >
+      <ion-label>
+         <ion-icon name="ios-refresh-circle"></ion-icon>
+              Mostrar tudo</ion-label>
+      <ion-radio value="" (ionSelect)="viewCtrl.dismiss()" ></ion-radio>
+  </ion-item>
+</ion-list>
